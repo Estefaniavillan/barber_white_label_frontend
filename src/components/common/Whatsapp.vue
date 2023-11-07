@@ -1,12 +1,13 @@
+<script>
+
+</script>
 <template>
   <div class="whatsapp-button" >
     <img src="#" alt="WhatsApp">
   </div>
 </template>
 
-<script>
 
-</script>
 
 <style scoped>
 .whatsapp-button {

@@ -1,3 +1,6 @@
+<script scope>
+
+</script>
 <template>
   <div>
     <h2>Formulario de Reservas</h2>
@@ -22,9 +25,7 @@
   </div>
 </template>
   
-<script scope>
 
-</script>
   
 <style scoped></style>
   
