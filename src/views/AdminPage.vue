@@ -1,13 +1,13 @@
 <script scope>
-  import ProductsAdmi from './ProductsAdmi.vue';
+  import ProductAdmi from './ProductsAdmi.vue';
   import ServicesAdmi from './ServicesAdmi.vue';
   import CreactionServices from './CreationServices.vue';
   
   export default {
     components: {
-    ProductsAdmi,
+    ProductAdmi,
     ServicesAdmi,
-    CreactionServices
+    CreactionServices,
 },
   }
   </script>
@@ -17,7 +17,7 @@
       <h1>Página de Administración</h1>
       <ProductAdmi />
       <ServicesAdmi />
-      <CreactionServicios />
+      <CreactionServices />
     </div>
   </template>
   

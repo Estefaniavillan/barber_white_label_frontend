@@ -1,23 +1,46 @@
 <template>
     <footer>
+    
+      <div class="containerFooter">
+     <picture>
+      <img src="../assets/img/logo.png" alt="logoFooter">
+     </picture>
+        
       <div class="contact-info">
         <div class="contact-email">
-          <strong>Correo:</strong> barberogeorgez@gmail.com
+          <h6>Contáctenos</h6>
+         barberogeorgez@gmail.com
         </div>
         <div class="contact-wzp">
-          <strong>Celular:</strong> +57 3005668477
+          +57 3005668477
         </div>
       </div>
       
-      <div class="social-media">
-        <strong>Redes Sociales:</strong>
+      <div class="socialMedia">
         <ul>
-          <li><a href="#" target="_blank">WhatsApp</a></li>
-          <li><a href="#" target="_blank">Instagram</a></li>
-          <li><a href="#" target="_blank">Facebook</a></li>
-          <li><a href="#" target="_blank">TikTok</a></li>
+          <li><img src="../assets/img/footer/tiktok1.png" alt="Tiktok"><a href="#" target="_blank"></a></li>
+          <li><img src="../assets/img/footer/youtube.png" alt="Youtube" ><a href="#" target="_blank"></a></li>
+          <li><img src="../assets/img/footer/instagram1.png" alt="Instagram"><a href="#" target="_blank"></a></li>
+          <li><img src="../assets/img/footer/facebook-011.png" alt="Facebook" ><a href="#" target="_blank"></a></li>
+          
         </ul>
       </div>
+    </div>
     </footer>
   </template>
   
+  <style scoped>
+
+.containerFooter{
+  background-color: #B48100;
+  width: 100%;
+  height: 233px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  }
+  .socialMedia{
+   display: flex;
+  }
+</style>
