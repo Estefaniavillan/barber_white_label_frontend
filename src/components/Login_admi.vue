@@ -20,7 +20,7 @@ defineProps({
     <label for="contrasena">Contraseña:</label>
     <input type="password" id="contrasena" name="contrasena" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[*%$#-_()./=@&!?+]).{8,}">
      <br>
-      <button type="button" id="loginButton">Iniciar Sesión</button>
+      <button type="sumit" id="loginButton" src="./Reservas.vue">Iniciar Sesión</button>
      </form>
 </template>
 
