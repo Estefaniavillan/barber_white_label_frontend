@@ -22,4 +22,8 @@ import CareAndWelfare from './components/Creacion_Servicios.vue';
 
 
 <style>
+#app{
+  background-color: rgb(15, 15, 15);
+  color: #ffffff;
+}
 </style>
