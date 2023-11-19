@@ -18,3 +18,6 @@ import Footer from './components/common/Footer.vue';
 <style scoped>
 </style>
 
+
+<style>
+</style>
