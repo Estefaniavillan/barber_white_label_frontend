@@ -22,10 +22,14 @@ export default {
     height: 48px;
     border-radius: 8px;
     padding: 2px 16px 2px 16px;
-    background-color:#8A939B;
+    
 }
 #fecha{
   background-color:#8A939B;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 8px;
+  width: 50%; 
 }
 </style>
  

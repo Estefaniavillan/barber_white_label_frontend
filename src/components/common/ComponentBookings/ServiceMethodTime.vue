@@ -10,53 +10,61 @@ export default {
 };
 </script>
 <template>
-    <div class="services">
-      <label for="servicio">Servicio:</label>
-      
-      <input type="text" placeholder="Selecciona el servicio" id="servicio" v-model="servicio">
-      <select id="servicio" v-model="servicio">
-        <option  value=""></option>
-        <option value=""></option>
-      </select>
+  <div class="services">
+    <div>
+    <label  for="services">Servicio:</label>
+    <select  id="servicio" v-model="services">
+      <option  value=""></option>
+      <option value=""></option>
+    </select>
+  </div>
       <br>
-      <label for="metodoPago">Método de Pago:</label>
-      <input type="text" placeholder="Selecciona el método de pago" id="metodoPago" v-model="metodoPago">
-      <select id="metodoPago" v-model="metodoPago">
-        <option  value=""></option>
-        <option value=""></option>
-      </select>
+      <div>
+        <label  for="method">Método de pago:</label>
+        <select  id="servicio" v-model="method">
+          <option  value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
       <br>
-      <label for="hora">Hora</label>
-      <input type="text" placeholder="Selecciona el rango horario" id="hora" v-model="hora">
-      <select id="hora" v-model="hora">
-        <option  value=""></option>
-        <option value=""></option>
-      </select>
-      <label for="hora">Horario sujeto a cambios debido a la disponibilidad</label>
-
-      <br>
+      <div class="hour">
+        <label  for="hour">Hora:</label>
+        <select  id="hora" v-model="hour">
+          <option  value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+      <p>Horario sujeto a cambios debido a la disponibilidad</p>
     </div>
   </template>
   
  <style scoped>
 .services{
-  background-color:#8A939B ;
-  color:#FFFFFF;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  border-radius: 8px;
   padding: 2px 16px 2px 16px;
-  
 }
-
 #servicio,
-#metodoPago,
+#metodoPago
+{
+  background-color:#8A939B ;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%; 
+}
 #hora{
   background-color:#8A939B ;
-  
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 8px;
+  width: 50%; 
+ 
 
-  
+}
+p{
+font-weight: 500;
+font-size: 12px;
+line-height: 14.1px;
+color: #B48100;
 }
 </style>
   

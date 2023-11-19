@@ -40,7 +40,9 @@
   align-items: center;
 
   }
-  .socialMedia{
-   display: flex;
+  .socialMedia ul li{
+   display: inline;
+   
+  
   }
 </style>

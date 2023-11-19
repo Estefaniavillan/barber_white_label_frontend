@@ -3,15 +3,18 @@
     import Number from '../components/common/ComponentBookings/Number.vue';
     import ServiceMethodTime from '../components/common/ComponentBookings/ServiceMethodTime.vue';
     import Calendar from '../components/common/ComponentBookings/Calendar.vue';
+    import BookNow from '../components/common/ComponentBookings/BookNow.vue'
+    import Whatsapp from '../components/common/Whatsapp.vue'
     import FooterB from '../components/common/FooterB.vue';
 
-    
     export default {
       components: {
         AddressName,
         Number,
         ServiceMethodTime,
         Calendar,
+        BookNow,
+        Whatsapp,
         FooterB,
       },
     };
@@ -21,15 +24,17 @@
 <template>
   <div class="container">
     <h2>¡Reserva ahora!</h2>
-    <hr>
+    <picture>
+      <img src="../assets/img/bookings/Rectangle 45.png" alt="">
+    </picture>
     <div class="content-wrapper">
-      <form class="form">
+      <form class="bookings">
         <AddressName></AddressName>
         <Number></Number>
         <ServiceMethodTime></ServiceMethodTime>
         <Calendar></Calendar>
-       <br>
-        <button type="submit">¡Reservar ahora!</button>
+        
+        <BookNow></BookNow>
       </form>
       <picture>
         <img src="../assets/img/bookings/Bookings.png" alt="">
@@ -38,16 +43,13 @@
     </div>
     
      </div>
+     <br>
+     <br>
+     
+     <Whatsapp></Whatsapp>
      <FooterB></FooterB>
     </template>
-    
-    
- 
-  
-
-  
-
-  
+   
 <style scoped>
 
 .container {
@@ -65,31 +67,16 @@ h2{
   text-align: right;
 }
 
-hr{
-  background-color: #B48100;
-  width: 1222px;
-  height: 2px;
- }
- form{
-  
-  width: 665px;
-  height: 643px;
 
- }
-
+ 
+.bookings{
+  width: 619px;
+  display: flex;
+  flex-direction: column;
+}
 .content-wrapper {
   display: flex;
   flex-direction: row-reverse;
-}
-button{
-  background-color: #B48100;
-  color:#ffffff;
-  width: 665px;
-  height: 48px;
-  border-radius:12px;
-  padding: 12px 48px 12px 48px;
-  gap:10px;
-
 }
 
 

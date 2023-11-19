@@ -23,19 +23,17 @@
   <style scoped>
 
   .addressName{
-    color:#FFFFFF;
-    font-size: 16px;
-    font-weight: 400;
     line-height: 24px;
     padding: 2px 16px 2px 16px;
     
+    
   }
   input {
-    width: 100%; /* Ajusta el ancho del input al 100% del contenedor */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del input */
+    width: 100%; 
+    box-sizing: border-box; 
     background-color:#8A939B ;
-    border-radius: 8px  ; /* Añade un borde al input */
-    padding: 8px; /* Añade relleno al input */
+    border-radius: 8px  ; 
+    padding: 8px;
   }
   
  
