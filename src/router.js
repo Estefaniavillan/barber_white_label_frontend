@@ -7,9 +7,10 @@ import AdminPage from './views/AdminPage.vue';
 import ServicesAdmi from './views/ServicesAdmi.vue';
 import ProductsAdmi from './views/ProductsAdmi.vue';
 import CreationServices from './views/CreationServices.vue';
+import CareAndWelfare from './views/CareAndWelfare.vue'
 
 const routes = [
-  { path: '/', component: LoginAdmi },
+  { path: '/', component: CareAndWelfare },
   { path: '/subcategories', component: Subcategories },
   { path: '/bookings', component: Bookings },
   {

@@ -2,8 +2,9 @@
 import Admin_page from './components/Admin_page.vue';
 import LoginAdmi from './components/Login_admi.vue';
 import Reservas from './components/Reservas.vue';
-import Whatsapp from './components/common/Whatsapp.vue';
-import Footer from './components/common/Footer.vue';
+import WhatsappB from './components/common/whatsappB.vue';
+import FooterB from './components/common/FooterB.vue';
+import CareAndWelfare from './components/Creacion_Servicios.vue';
 
 </script>
 
@@ -11,8 +12,9 @@ import Footer from './components/common/Footer.vue';
   <Admin_page />,
   <LoginAdmi msg="Login" />,
   <Reservas />,
-  <Whatsapp />,
-  <Footer />,
+  <WhatsappB />,
+  <CareAndWelfare />,
+  <FooterB />,
 </template>
 
 <style scoped>
