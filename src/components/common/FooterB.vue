@@ -18,7 +18,7 @@
       
       <div class="socialMedia">
         <ul>
-          <li><img src="../assets/img/footer/tiktok1.png" alt="Tiktok"><a href="#" target="_blank"></a></li>
+          <li><img src="../../assets/img/footer/tiktok.png" alt="Tiktok"><a href="#" target="_blank"></a></li>
           <li><img src="../assets/img/footer/youtube.png" alt="Youtube" ><a href="#" target="_blank"></a></li>
           <li><img src="../assets/img/footer/instagram1.png" alt="Instagram"><a href="#" target="_blank"></a></li>
           <li><img src="../assets/img/footer/facebook-011.png" alt="Facebook" ><a href="#" target="_blank"></a></li>

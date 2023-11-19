@@ -15,6 +15,7 @@
     <div class="input-group">
       <label for="codigoPais">Código del País:</label>
       <select id="codigoPais" v-model="codigoPais">
+        <option value="" selected disabled hidden>Codigo</option>
         <option value="+57">+57</option>
         <option value="+1">+1</option>
       </select>
