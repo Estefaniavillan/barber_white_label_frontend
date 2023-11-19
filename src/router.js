@@ -9,7 +9,7 @@ import ProductsAdmi from './views/ProductsAdmi.vue';
 import CreationServices from './views/CreationServices.vue';
 
 const routes = [
-  { path: '/', component: LoginAdmi },
+  { path: '/', component: Bookings },
   { path: '/subcategories', component: Subcategories },
   { path: '/bookings', component: Bookings },
   {
