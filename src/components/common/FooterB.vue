@@ -3,7 +3,7 @@
     
       <div class="containerFooter">
      <picture>
-      <img src="../assets/img/logo.png" alt="logoFooter">
+      <img src="../../assets/img/logo.png" alt="logoFooter">
      </picture>
         
       <div class="contact-info">
@@ -19,9 +19,9 @@
       <div class="socialMedia">
         <ul>
           <li><img src="../../assets/img/footer/tiktok.png" alt="Tiktok"><a href="#" target="_blank"></a></li>
-          <li><img src="../assets/img/footer/youtube.png" alt="Youtube" ><a href="#" target="_blank"></a></li>
-          <li><img src="../assets/img/footer/instagram1.png" alt="Instagram"><a href="#" target="_blank"></a></li>
-          <li><img src="../assets/img/footer/facebook-011.png" alt="Facebook" ><a href="#" target="_blank"></a></li>
+          <li><img src="../../assets/img/footer/youtube.png" alt="Youtube" ><a href="#" target="_blank"></a></li>
+          <li><img src="../../assets/img/footer/instagram.png" alt="Instagram"><a href="#" target="_blank"></a></li>
+          <li><img src="../../assets/img/footer/facebook.png" alt="Facebook" ><a href="#" target="_blank"></a></li>
           
         </ul>
       </div>
@@ -40,9 +40,10 @@
   align-items: center;
 
   }
-  .socialMedia ul li{
+  .socialMedia ul li {
    display: inline;
-   
+ 
   
   }
+ 
 </style>

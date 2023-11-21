@@ -3,7 +3,7 @@
 </script>
 <template>
   <div class="whatsapp-button" >
-    <img src="../assets/img/WhatsApp1.png" alt="WhatsApp">
+    <img src="../../assets/img/WhatsApp.png" alt="WhatsApp">
   </div>
 </template>
 
@@ -16,4 +16,5 @@
   right: 20px;
   cursor: pointer;
 }
+
 </style>

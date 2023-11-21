@@ -1,21 +1,14 @@
-<script>
-  export default {
-    data() {
-      return {
-        codigoPais: '',
-        numeroContacto: '',
-      };
-    },
-  };
+<script setup>
+  const props = defineProps(["title", "placeholder"])
+
   </script>
 <template>
-  
+  <div>
+  <p class="text-center">{{ props.title }}</p>  
   <div class="telefono-container">
-    <label for="number">Número de teléfono:</label>
     <div class="input-group">
-      <label for="codigoPais">Código del País:</label>
       <select id="codigoPais" v-model="codigoPais">
-        <option value="" selected disabled hidden>Codigo</option>
+        <option value="" selected disabled hidden>Codigo del paìs</option>
         <option value="+57">+57</option>
         <option value="+1">+1</option>
       </select>
@@ -23,18 +16,12 @@
       <input type="text" placeholder="0000 0000" id="numberContact" v-model="numeroContacto">
     </div>
   </div>
+</div>
   </template>
   
   
   <style scoped>
-  .telefono-container {
-    display: flex;
-    flex-direction: column;
-    line-height: 24px;
-    padding: 2px 16px 2px 16px;
-      
-    
-  }
+
   #numberContact{
     width: 100%;
    
@@ -43,6 +30,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+
 
   }
  

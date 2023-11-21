@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import LoginAdmi from './views/LoginAdmi.vue';
+import Home from './views/HomePage.vue';
 import Subcategories from './views/Subcategories.vue';
 import Bookings from './views/Bookings.vue';
 import AdminPage from './views/AdminPage.vue';
@@ -9,9 +10,10 @@ import ProductsAdmi from './views/ProductsAdmi.vue';
 import CreationServices from './views/CreationServices.vue';
 
 const routes = [
-  { path: '/', component: Bookings },
+  { path: '/', component: Home},
   { path: '/subcategories', component: Subcategories },
   { path: '/bookings', component: Bookings },
+  
   {
     path: '/admin',
     component: AdminPage,
@@ -19,6 +21,7 @@ const routes = [
       { path: 'products', component: ProductsAdmi },
       { path: 'services', component: ServicesAdmi },
       { path: 'creation', component: CreationServices },
+      { path: '/home', component: Home },
     ],
   },
 ];
