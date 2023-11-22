@@ -25,7 +25,8 @@ import CustomFieldProducts from './components/common/ComponentBlog/CustomFieldPr
 
 <style>
 #app{
-  background-color: rgb(15, 15, 15);
+  
   color: #ffffff;
+
 }
 </style>

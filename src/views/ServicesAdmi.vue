@@ -1,66 +1,113 @@
-<script scope>
-function mostrarFormularioAgregar() {
-            // Lógica para mostrar el formulario de agregar
-            // Puedes inicializar los campos del formulario si es necesario
-        }
+<script >
+import ContainerField from '../components/common/ComponentServicesAdmi/ContainerField.vue'
 
-        function mostrarFormularioEditar(idServicio) {
-            // Lógica para mostrar el formulario de editar con los datos cargados
-        }
 
-        function guardarServicio() {
-            // Lógica para guardar o actualizar el servicio
-            // Puedes utilizar AJAX o Fetch para comunicarte con un servidor
-            // y enviar o actualizar la información del servicio
-        }
 
-        function mostrarPopupEliminar(idServicio) {
-            // Lógica para mostrar el popup de confirmación para eliminar
-        }
-
-        function eliminarServicio(idServicio) {
-            // Lógica para eliminar el servicio
-        }
-
-        function cerrarFormulario() {
-            // Lógica para cerrar el formulario
-        }
+export default {
+  components: {
+   ContainerField,
+},
+};
 </script>
 
 <template>
-  <h1>Servicios</h1>
-
-  <button onclick="mostrarFormularioAgregar()">Agregar Servicio</button>
-
-  <ul id="listaServicios">
-  </ul>
-
-  <div id="formulario" style="display: none;">
-      <h2 id="formularioTitulo">Agregar Servicio</h2>
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre">
-
-      <label for="precio">Precio:</label>
-      <input type="number" id="precio">
-
-      <label for="categoria">Categoría:</label>
-      <select id="categoria">
-          <option value="Barbería">Barbería</option>
-          <option value="Mascarilla">Mascarilla</option>
-          <option value="Otros">Otros</option>
-      </select>
-
-      <label for="activo">Activo:</label>
-      <input type="checkbox" id="activo">
-
-      <label for="duracion">Duración:</label>
-      <input type="text" id="duracion">
-
-
-      <button onclick="guardarServicio()">Guardar Servicio</button>
-      <button onclick="cerrarFormulario()">Cancelar</button>
+  
+  <div class="container">
+    <div class="imagen">
   </div>
+</div>
+  <div class="containerServices">
+    <h2>Servicios</h2>
+    <picture>
+      <img class="rectangle" src="../assets/img/bookings/Rectangle 45.png" alt="">
+    </picture>
+  <div class="content-wrapper">
+  <ContainerField />
+  <ContainerField  />
+  <ContainerField  />
+  <picture>
+    <img class="scissors" src="../assets/img/servicesAdmi/noun-barber-56898974.png" alt="Imagen tijera"/>
+    <img class="other" src="../assets/img/servicesAdmi/noun-barber-56898973.png" alt="Imagen mascarilla"/>
+    <img class="faceMask" src="../assets/img/servicesAdmi/noun-barber-56898972.png" alt="otros"/>
+  </picture>
+  </div>
+  
+ </div>
+
+
+
+
   </template>
   
   <style scoped>
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+  }
+  
+  .imagen {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/servicesAdmi/barba.png'); 
+    background-size: cover; 
+    z-index: -1; /* Coloca la imagen detrás de los demás elementos */
+    opacity: 60; /* Ajusta la opacidad según desees */
+  }
+  .rectangle{
+    position: relative;
+
+  }
+  .scissors{
+    display: flex;
+    position: absolute;
+    margin: -24rem 13.5rem;
+  }
+  .faceMask{
+    display: flex;
+    position: absolute;
+    margin: -24rem 37rem;
+  }
+  .other{
+    display: flex;
+    position: absolute;
+    margin: -24rem 60.5rem;
+}
+  
+  .containerServices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    height: 1177px;
+    
+  
+  }
+  .content-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin: 4rem 4rem 4rem 4rem;
+    z-index: 90;
+   
+     
+    }
+    h2 {
+      width: 1200px;
+      height: 20px;
+      font-size: 64px;
+      line-height: 67.2px;
+      font-weight: 400;
+      text-align:left ;
+      z-index: 90;
+
+     
+    }
+    
   </style>

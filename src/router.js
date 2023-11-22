@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import LoginAdmi from './views/LoginAdmi.vue';
+import Home from './views/HomePage.vue';
 import Subcategories from './views/Subcategories.vue';
 import Bookings from './views/Bookings.vue';
 import AdminPage from './views/AdminPage.vue';
@@ -11,11 +12,10 @@ import CareAndWelfare from './views/CareAndWelfare.vue'
 import CustomFieldProducts from './components/common/ComponentBlog/CustomFieldProducts.vue';
 
 const routes = [
-  { path: '/', component: CustomFieldProducts },
   { path: '/', component: Bookings },
-  { path: '/', component: CareAndWelfare },
   { path: '/subcategories', component: Subcategories },
   { path: '/bookings', component: Bookings },
+  
   {
     path: '/admin',
     component: AdminPage,
@@ -23,6 +23,7 @@ const routes = [
       { path: 'products', component: ProductsAdmi },
       { path: 'services', component: ServicesAdmi },
       { path: 'creation', component: CreationServices },
+      { path: '/home', component: Home },
     ],
   },
 ];

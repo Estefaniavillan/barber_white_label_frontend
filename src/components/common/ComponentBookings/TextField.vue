@@ -10,5 +10,13 @@ const props = defineProps(["title", "placeholder"])
 </template>
 
 <style scoped>
+  input {
+    width: 100%; 
+    box-sizing: border-box; 
+    background-color:#8A939B ;
+    border-radius: 8px  ; 
+    padding: 8px;
     
+  }
+  
 </style>
