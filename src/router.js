@@ -10,7 +10,7 @@ import ProductsAdmi from './views/ProductsAdmi.vue';
 import CreationServices from './views/CreationServices.vue';
 
 const routes = [
-  { path: '/', component: Home},
+  { path: '/', component:Home },
   { path: '/subcategories', component: Subcategories },
   { path: '/bookings', component: Bookings },
   
