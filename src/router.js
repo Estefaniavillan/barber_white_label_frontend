@@ -8,8 +8,10 @@ import ServicesAdmi from './views/ServicesAdmi.vue';
 import ProductsAdmi from './views/ProductsAdmi.vue';
 import CreationServices from './views/CreationServices.vue';
 import CareAndWelfare from './views/CareAndWelfare.vue'
+import CustomFieldProducts from './components/common/ComponentBlog/CustomFieldProducts.vue';
 
 const routes = [
+  { path: '/', component: CustomFieldProducts },
   { path: '/', component: Bookings },
   { path: '/', component: CareAndWelfare },
   { path: '/subcategories', component: Subcategories },

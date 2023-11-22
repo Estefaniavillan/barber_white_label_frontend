@@ -10,12 +10,13 @@
     <section class="imagen_1">
       <div>
         <img src="../image/Diseno-sin-titulo-1 1.png" width="451px" height="396px">
-      </div>
-      <div class="text_image">
+        <div class="text_image">
         <p>“Para asegurar un crecimiento más rápido del cabello (o, al menos, que no lo ralentice u obstruya) es
           fundamental una dieta equilibrada, la cual debe incluir frutas y verduras frescas. Una buena nutrición significa
           la mejor condición posible para construir mechones fuertes y radiantes.</p>
       </div>
+      </div>
+     
     </section>
     <p class="parrafo_2">
       Las 7 causas principales que influyen en el crecimiento capilar
@@ -116,24 +117,6 @@ h2 {
 }
 
 .text_image{
-width: 289px;
-height: 396px;
-font-family: Nunito;
-font-size: 60px;
-font-style: italic;
-font-weight: 700;
-line-height: 82px;
-letter-spacing: 0em;
-text-align: left;
-
-font-family: Nunito;
-font-size: 20px;
-font-style: italic;
-font-weight: 700;
-line-height: 27px;
-letter-spacing: 0em;
-text-align: left;
-
 font-family: Nunito;
 font-size: 30px;
 font-style: italic;
@@ -143,6 +126,7 @@ letter-spacing: 0em;
 text-align: left;
 background: linear-gradient(0deg, #F5F7F9, #F5F7F9),
 linear-gradient(0deg, #B48100, #B48100);
+border: 3px solid #B48100
 }
 .imagen_1 {
   width: Hug (793px);

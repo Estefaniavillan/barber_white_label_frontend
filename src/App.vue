@@ -5,6 +5,7 @@ import Reservas from './components/Reservas.vue';
 import WhatsappB from './components/common/whatsappB.vue';
 import FooterB from './components/common/FooterB.vue';
 import CareAndWelfare from './components/Creacion_Servicios.vue';
+import CustomFieldProducts from './components/common/ComponentBlog/CustomFieldProducts.vue';
 
 </script>
 
@@ -14,6 +15,7 @@ import CareAndWelfare from './components/Creacion_Servicios.vue';
   <Reservas />,
   <WhatsappB />,
   <CareAndWelfare />,
+  <CustomFieldProducts />,
   <FooterB />,
 </template>
 
