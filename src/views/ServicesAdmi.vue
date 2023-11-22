@@ -57,8 +57,8 @@ export default {
     height: 100%;
     background-image: url('../assets/img/servicesAdmi/barba.png'); 
     background-size: cover; 
-    z-index: -1; /* Coloca la imagen detrás de los demás elementos */
-    opacity: 60; /* Ajusta la opacidad según desees */
+    z-index: -1;
+    opacity: 60; 
   }
   .rectangle{
     position: relative;
