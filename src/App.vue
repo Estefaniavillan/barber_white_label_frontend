@@ -1,13 +1,13 @@
 <script scope>
   import HomeView from './views/HomeView.vue'
-  import ServicesAdmi from './views/ServicesAdmi.vue';
-  import ProductsAdmi from "./views/ProductsAdmi.vue"
+  import ServicesAdmin from './views/ServicesAdmin.vue';
+  import ProductsAdmin from './views/productsadmin.vue';
   import CreactionServices from './views/CreationServices.vue';
   
   export default {
     components: {
-    ServicesAdmi,
-    ProductsAdmi,
+    ServicesAdmin,
+    ProductsAdmin,
     CreactionServices
 },
   }

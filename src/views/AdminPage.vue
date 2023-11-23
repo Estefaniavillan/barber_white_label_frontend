@@ -1,12 +1,12 @@
 <script scope>
-  import ProductsAdmi from './ProductsAdmi.vue'; 
-  import ServicesAdmi from './ServicesAdmi.vue';
+  import ProductsAdmin from './ProductsAdmin.vue'; 
+  import ServicesAdmin from './ServicesAdmin.vue';
   import CreactionServices from './CreationServices.vue';
   
   export default {
     components: {
-    ProductsAdmi,
-    ServicesAdmi,
+    ProductsAdmin,
+    ServicesAdmin,
     CreactionServices
 },
   }

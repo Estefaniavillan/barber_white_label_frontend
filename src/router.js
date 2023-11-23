@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import HomeView from './views/HomeView.vue';
-import LoginAdmi from './views/LoginAdmi.vue';
-import ProductsAdmi from './views/ProductsAdmi.vue';
+import LoginAdmin from './views/LoginAdmin.vue';
+import ProductsAdmin from './views/ProductsAdmin.vue';
 
 
 const routes = [
   { path: "/", component: HomeView },
-  { path: "/LoginAdmi", component: LoginAdmi },
-  {path: "/ProductsAdmi", component: ProductsAdmi}
+  { path: "/LoginAdmin", component: LoginAdmin },
+  {path: "/ProductsAdmin", component: ProductsAdmin}
 ]
 
 const router = createRouter({

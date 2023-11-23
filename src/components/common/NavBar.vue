@@ -2,8 +2,8 @@
     <div>
         <nav>
             <router-link to="/" exact-active-class="active">PAGINA PRINCIPAL</router-link>            
-            <router-link to="/LoginAdmi" exact-active-class="active">LOGIN ADMIN</router-link>            
-            <router-link to="/ProductsAdmi" exact-active-class="active">ADMINISTRADOR DE PRODUCTOS</router-link>
+            <router-link to="/LoginAdmin" exact-active-class="active">LOGIN ADMIN</router-link>            
+            <router-link to="/ProductsAdmin" exact-active-class="active">ADMINISTRADOR DE PRODUCTOS</router-link>
             <router-link to="/whobook" exact-active-class="active">¿ Quienes Somos ?</router-link>
         </nav>
     </div>
