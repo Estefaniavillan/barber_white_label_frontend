@@ -1,16 +1,34 @@
-<script>
-export default {
-  name: 'App',
-};
-</script>
-
+<script scope>
+  import HomeView from './views/HomeView.vue'
+  import ServicesAdmi from './views/ServicesAdmi.vue';
+  import ProductsAdmi from "./views/ProductsAdmi.vue"
+  import CreactionServices from './views/CreationServices.vue';
+  
+  export default {
+    components: {
+    ServicesAdmi,
+    ProductsAdmi,
+    CreactionServices
+},
+  }
+  </script>
+  
 <template>
-  <div>
     <router-view></router-view>
-  </div>
-</template>
-
-
-
-<style>
-</style>
+  </template>
+  <style scoped>
+  .buscador{
+    background-color: #F5F7F9;
+    border-radius: 0.5rem;
+    padding: 0;
+  }
+  
+  input {
+    width: 40rem;
+    border: none;
+    outline: none;
+    background-color: #F5F7F9;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  </style>

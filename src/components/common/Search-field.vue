@@ -1,7 +1,7 @@
 <template>
     <div class="buscador">
-      <input type="text" placeholder="Buscar producto">
-      <button type="button" class="btn btn-light"><img src="../../assets/img/icons/buscador.svg" alt="Buscar"> </button>
+      <input type="text" placeholder="Buscar Producto">
+      <button type="button" class="btn btn-light"><img src="" alt="Buscar"> </button>
     </div>
   </template>
   <style scoped>
