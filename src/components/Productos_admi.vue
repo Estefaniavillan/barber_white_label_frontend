@@ -1,52 +1,45 @@
-<script>
- function mostrarFormularioAgregar() {
-            // Lógica para mostrar el formulario de agregar
-        }
-
-        function mostrarFormularioEditar(idProducto) {
-            // Lógica para mostrar el formulario de editar con los datos cargados
-        }
-
-        function guardarProducto() {
-            // Lógica para guardar o actualizar el producto
-            // y enviar o actualizar la información del producto
-        }
-
-        function mostrarPopupEliminar(idProducto) {
-            // Lógica para mostrar el popup de confirmación para eliminar
-        }
-
-        function eliminarProducto(idProducto) {
-            // Lógica para eliminar el producto
-        }
-
-        function cerrarFormulario() {
-            // Lógica para cerrar el formulario
-        }
+<script setup>
+import NavBarAdmin from './admin/header/NavBarAdmin.vue';
+import HeaderAdmin from './admin/header/HeaderAdmin.vue';
 </script>
+
 <template>
- 
-    <h1>Productos</h1>
+    <div class="contenedor_productos">
+        <NavBarAdmin class="nav" />
+        <HeaderAdmin class="header" />
 
-  <button onclick="mostrarFormularioAgregar()">Agregar Producto</button>
-
-   <ul id="listaProductos">
-  </ul>
-  <div id="formulario" style="display: none;">
-        <h2 id="formularioTitulo">Agregar Producto</h2>
-       <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre">
-
-        <label for="precio">Precio:</label>
-        <input type="number" id="precio">
-
-        <button onclick="guardarProducto()">Guardar Producto</button>
-        <button onclick="cerrarFormulario()">Cancelar</button>
     </div>
-
 </template>
 
-
-
 <style scoped>
+.contenedor_productos {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: #101010;
+
+}
+
+.header {
+    flex-wrap: wrap;
+}
+
+.nav {
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+
+}
+
+.libros {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 70%;
+    flex-grow: 1;
+}
+
+.top {
+    display: flex;
+    flex: 0 0 25%;
+}
 </style>

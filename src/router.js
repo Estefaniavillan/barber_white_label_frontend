@@ -10,9 +10,11 @@ import ProductsAdmi from './views/ProductsAdmi.vue';
 import CreationServices from './views/CreationServices.vue';
 import CareAndWelfare from './views/CareAndWelfare.vue'
 import CustomFieldProducts from './components/common/ComponentBlog/CustomFieldProducts.vue';
+import HeaderAdmin from './components/admin/header/HeaderAdmin.vue';
+import NavBarAdmin from './components/admin/header/NavBarAdmin.vue';
 
 const routes = [
-  { path: '/', component: Bookings },
+  { path: '/', component: ProductsAdmi },
   { path: '/subcategories', component: Subcategories },
   { path: '/bookings', component: Bookings },
   
