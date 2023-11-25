@@ -15,11 +15,16 @@ const props = defineProps(["title"])
   
   <style scoped>
 #fecha{
-  background-color:#8A939B;
   box-sizing: border-box;
-  border-radius: 8px;
   padding: 8px;
+  border: 1px solid #b48100;
+  background: #2f3133;
+  color: #ffffff;
+  border-radius: 8px  ;
  
+}
+.text-center{
+  margin: 5px 4px;
 }
 </style>
  

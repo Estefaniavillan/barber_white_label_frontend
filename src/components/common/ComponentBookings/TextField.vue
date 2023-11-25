@@ -11,12 +11,15 @@ const props = defineProps(["title", "placeholder"])
 
 <style scoped>
   input {
-    width: 100%; 
-    box-sizing: border-box; 
-    background-color:#8A939B ;
-    border-radius: 8px  ; 
+    width: 330px;
+    color:#ffffff;
     padding: 8px;
-    
+    border-radius: 8px;
+    border: 1px solid  #B48100;
+    background: #2F3133; 
+  }
+  .text-center{
+    margin: 5px 4px;
   }
   
 </style>

@@ -1,20 +1,19 @@
-<template>
-    <div class="booknow">
-      <button type="submit">¡Reservar ahora!</button>
-    </div>
-  </template>
+<script setup>
+const props = defineProps(["placeholder"])
 
-  <style scoped>
-  .booknow{
-    padding: 12px 48px 12px 48px;
-  }
-  button{
+</script>
+<template>
+        
+        <button class="text-center">{{ props.placeholder }}</button>
+  </template>
+<style scoped>
+  
+  .text-center{
     background-color: #B48100;
     color: #ffffff;
-    width: 543px;
-    height: 48px;
     border-radius: 12px;
-    
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 </style>

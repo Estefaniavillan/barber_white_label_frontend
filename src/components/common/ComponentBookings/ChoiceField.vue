@@ -1,23 +1,38 @@
 <script setup>
-const props = defineProps(["title", "placeholder", ""])
+import { defineProps } from "vue";
+
+const props = defineProps({
+  title: String,
+  placeholder:String,
+  text:String,
+  
+});
 </script>
 
 <template>
-        <p class="text-center">{{ props.title }}</p>
-        <select id="services" v-model="services">
-        <option value="" selected disabled hidden>Hola</option>
-        <option value=""></option>
-        <option value=""></option>
-        </select>
+  <div>
+    <p class="text-center">{{ props.title }}</p>
+    <select id="services" v-model="props.services">
+      <option :value="null" disabled hidden>{{ props.placeholder }}</option>
+      <p>
+        {{ props.text}}
+      </p>
+    </select>
+  </div>
+ 
 </template>
 
 <style scoped>
+.text-center {
+  margin: 5px 4px;
+}
 #services {
-  width: 100%; 
-  box-sizing: border-box; 
-  background-color:#8A939B ;
-  border-radius: 8px  ; 
+  width: 100%;
+  box-sizing: border-box;
+  color: #ffffff;
   padding: 8px;
-  
+  border-radius: 8px;
+  border: 1px solid #b48100;
+  background: #2f3133;
 }
 </style>

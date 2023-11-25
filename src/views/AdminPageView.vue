@@ -1,7 +1,7 @@
 <script scope>
-  import ProductAdmi from './ProductsAdmi.vue';
-  import ServicesAdmi from './ServicesAdmi.vue';
-  import CreactionServices from './CreationServices.vue';
+  import ProductAdmi from './ProductsAdmiView.vue';
+  import ServicesAdmi from './ServicesAdmiView.vue';
+  import CreactionServices from './CreationServicesView.vue';
   
   export default {
     components: {
