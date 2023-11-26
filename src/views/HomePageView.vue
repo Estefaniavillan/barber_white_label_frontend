@@ -12,8 +12,8 @@ import BookNow from '../components/common/ComponentBookings/BookNow.vue';
 </script>
 <template>
     <NadvarHome></NadvarHome>
-    <div class="containerHome">
-      <div class="picture">
+    <div class="container">
+   <div class="containerHome">
         <div class="textContainer">
           <h2>Tradición y Tendencia <br> se unen en <span class="colored-text"><u>cada estilo,</u> </span><br> creando tu look único</h2>
           <img class="vector" src="../assets/img/Vector.png" alt="vector">
@@ -23,40 +23,47 @@ import BookNow from '../components/common/ComponentBookings/BookNow.vue';
             <BookNow class="bookNow" placeholder="¡Reserva ahora!"></BookNow>
           </div>
       </div>
-    </div>
-    
+   </div>
     <div class="containerBox"></div>
 
     <Whatsapp></Whatsapp>
   </template>
   
   <style>
-  .containerBox {
-    width: 368px;
-    height: 782px;
-    border-radius: 14px;
-    opacity: 0.1;
-    background: #8A939B;
-    margin: 54px 1025px 179px 46px;
 
+    .container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url('../assets/img/corte.png');
+      background-size: cover; 
+      z-index: -1;
 
   }
-  
-  .containerHome {
+  .containerHome{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 80rem;
-    background: linear-gradient(51deg, #101010 0%, #101010 25.52%, rgba(16, 16, 16, 0.00));
-
+    height: 100%;
+    background: linear-gradient(90deg, #101010 0%, #101010 25.52%, rgba(16, 16, 16, 0.00) 100%);
   }
-  
-  .picture {
+  .containerBox {
+    width: 380px;
+    height: 673px;
+    border-radius: 14px;
+    opacity: 10%;
+    background: #8A939B;
+    margin: 54px 1025px 179px 46px;
+    
+  }
+
+  .img {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('../assets/img/corte.png');
     background-repeat: no-repeat;
     z-index: -1;
 
@@ -64,10 +71,11 @@ import BookNow from '../components/common/ComponentBookings/BookNow.vue';
   
   .textContainer {
     flex-direction: column;
-    margin: 25rem 35rem 0 0;
+    margin: 329px -207px;
     display: flex;
     align-items: center;
-    text-align: center;
+    position: absolute;
+
   }
   .colored-text {
     color: #B48100;

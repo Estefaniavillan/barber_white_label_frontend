@@ -29,23 +29,25 @@ const props = defineProps({
 <style>
 .poniter {
   display: flex;
-  position: absolute;
-  margin: 3rem 8rem 3rem 12rem;
+    position: absolute;
+    margin: 4rem 119px;
 }
+
 .barberia-box {
-  width: 312px;
-  height: 297px;
+  width: 311px;
+  height: 306px;
   background-color: rgba(138, 147, 155, 0.2);
-  border-radius: 14px;
-  margin: 7rem -2rem 3rem 6rem;
-  z-index: 70px;
+  border-radius: 9px;
+  margin: 9rem 20px;
+
 }
+
 .information {
   width: 254px;
   height: 174px;
-  left: 25px;
   padding: 3rem 3rem;
 }
+
 .information h2 {
   font-weight: 400;
   font-size: 40px;

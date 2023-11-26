@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="containerBookings">
     <h2>¡Reserva ahora!</h2>
     <picture>
       <img
@@ -78,7 +78,7 @@ export default {
 
 <style scoped>
 
-  .container {
+  .containerBookings{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,8 +95,8 @@ h2 {
   text-align: right;
 }
 .rectangle{
-  width: 1222px;
-  height: 2px;
+  margin-right: 39rem;
+  width: 97rem;
 }
 .bookings{
   display: flex;
