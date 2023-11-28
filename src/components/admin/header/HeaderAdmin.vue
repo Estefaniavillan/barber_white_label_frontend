@@ -21,7 +21,6 @@ header {
     margin-right: 1.5rem;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    width: 100%;
 }
 
 .line {
@@ -36,14 +35,12 @@ section {
 
 section h2 {
     color: white;
-    margin: 0;
     font-weight: bold;
 }
 
 section p {
     font-size: 16px;
     color: white;
-    margin: 0;
 }
 
 .container_button {

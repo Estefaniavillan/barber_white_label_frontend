@@ -1,18 +1,30 @@
-<script setup>
+<!-- <script setup>
+import ProductsTable from './ProductsTable.vue';
+
 
 </script>
 
 <template>
     <section>
-        <BooksTable :headers="headers" :items="books" class="table" :rows-items="[5, 10, 15]" :rows-per-page="10">
-            <template #item-nom_lib="item">
+        <ProductsTable :headers="headers" :items="products" class="table" :rows-items="[5, 10, 15]" :rows-per-page="10">
+            <template #item-name="item">
                 <div>
-                    📖 {{ item.nom_lib }}
+                    📖 {{ item.name }}
                 </div>
             </template>
-            <template #item-precio_lib="item">
+            <template #item-category="item">
                 <div>
-                    {{ currencyFormatter({ currency: "USD", value: item.precio_lib }) }}
+                    📖 {{ item.category }}
+                </div>
+            </template>
+            <template #item-brand="item">
+                <div>
+                    📖 {{ item.brand }}
+                </div>
+            </template>
+            <template #itemprice="item">
+                <div>
+                    {{ currencyFormatter({ currency: "USD", value: item.price }) }}
                 </div>
             </template>
             <template #item-stock="item">
@@ -27,7 +39,7 @@
             <template #item-eliminar="item">
                 <ModalDeleteBook @on-delete="$event => $emit('onDelete', item.codigo)" />
             </template>
-        </BooksTable>
+        </ProductsTable>
     </section>
 </template>
 
@@ -36,7 +48,7 @@ section {
     margin-top: 1rem;
     height: 100%;
     border-radius: 0.5rem;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     color: #5B656F;
 }
 
@@ -68,4 +80,4 @@ section {
 .delete-icon {
     width: 14px;
 }
-</style>
+</style> -->

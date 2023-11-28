@@ -1,12 +1,16 @@
 <script setup>
-import NavBarAdmin from './admin/header/NavBarAdmin.vue';
-import HeaderAdmin from './admin/header/HeaderAdmin.vue';
+import NavBarAdmin from "./admin/header/NavBarAdmin.vue";
+import HeaderAdmin from "./admin/header/HeaderAdmin.vue";
+import ProductsTable from "./admin/header/ProductsTable.vue";
 </script>
 
 <template>
     <div class="contenedor_productos">
         <NavBarAdmin class="nav" />
-        <HeaderAdmin class="header" />
+        <div class="container-body">
+            <HeaderAdmin class="header" />
+            <ProductsTable class="table" />
+        </div>
 
     </div>
 </template>
@@ -18,6 +22,12 @@ import HeaderAdmin from './admin/header/HeaderAdmin.vue';
     gap: 2rem;
     background-color: #101010;
 
+}
+
+.container-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .header {
