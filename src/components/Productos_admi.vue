@@ -2,6 +2,14 @@
 import NavBarAdmin from "./admin/header/NavBarAdmin.vue";
 import HeaderAdmin from "./admin/header/HeaderAdmin.vue";
 import ProductsTable from "./admin/header/ProductsTable.vue";
+import getProducts from "../controllers/ProductController.js"
+import { onMounted, ref } from "vue";
+
+const products = ref([]);
+onMounted(async () => {
+    products.value = await getProducts()
+})
+
 </script>
 
 <template>
@@ -9,7 +17,7 @@ import ProductsTable from "./admin/header/ProductsTable.vue";
         <NavBarAdmin class="nav" />
         <div class="container-body">
             <HeaderAdmin class="header" />
-            <ProductsTable class="table" />
+            <ProductsTable class="table" :items="products" />
         </div>
 
     </div>
@@ -24,7 +32,7 @@ import ProductsTable from "./admin/header/ProductsTable.vue";
 
 }
 
-.container-body{
+.container-body {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -41,15 +49,4 @@ import ProductsTable from "./admin/header/ProductsTable.vue";
 
 }
 
-.libros {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 70%;
-    flex-grow: 1;
-}
-
-.top {
-    display: flex;
-    flex: 0 0 25%;
-}
 </style>
