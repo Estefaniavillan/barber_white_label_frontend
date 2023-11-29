@@ -75,7 +75,7 @@ const thirdList = [
 <style scoped>
 .containerImage {
   position: absolute;
-  /*background: linear-gradient(-90deg, #101010 0%, #101010 25.52%, rgba(16, 16, 16, 0.00) 100%);*/
+  background: linear-gradient(-90deg, #101010 0%, #101010 25.52%, rgba(16, 16, 16, 0.00) 100%);
   width: 100%;
   height: 100vh;
 }
