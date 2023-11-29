@@ -19,7 +19,7 @@ const props = defineProps({
             <h2>{{ props.title }}</h2>
             <ul class="items">
                 <li v-for="item in props.list">
-                    {{ item }}
+                    {{ item.name }}
                 </li>
             </ul>
         </div>

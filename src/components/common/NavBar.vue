@@ -6,6 +6,7 @@
             <router-link to="/services" exact-active-class="active"><p>Servicios</p></router-link>
             <router-link to="/products" exact-active-class="active"><p>Productos</p></router-link>
             <router-link to="/blog" exact-active-class="active"><p>Blog</p></router-link>
+            <router-link to="/login" exact-active-class="active"><p>Login</p></router-link>
         </article>
     </nav>
 </template>

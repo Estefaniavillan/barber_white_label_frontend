@@ -6,11 +6,14 @@ import ProductsAdmi from './views/ProductsAdminView.vue';
 import CreationServices from './views/CreationServicesView.vue';
 import HomePageView from "./views/HomePageView.vue";
 import ServicesAdminView from "./components/home/ServicesHome.vue";
+import LoginAdminView from "./views/LoginAdminView.vue";
 
 const routes = [
     {path: '/', component: HomePageView},
+    {path: '/login', component: LoginAdminView},
     {path: '/subcategories', component: Subcategories},
     {path: '/bookings', component: Bookings},
+    {path: '/admin', component: ProductsAdmi},
     {
         path: '/admin',
         component: AdminPage,
