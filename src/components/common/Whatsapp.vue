@@ -1,9 +1,9 @@
-<script >
+<script  scoped>
 
 </script>
 <template>
   <div class="whatsapp-button" >
-    <img src="#" alt="WhatsApp">
+    <img src="../../assets/img/WhatsApp.png" alt="WhatsApp">
   </div>
 </template>
 
@@ -16,4 +16,5 @@
   right: 20px;
   cursor: pointer;
 }
+
 </style>

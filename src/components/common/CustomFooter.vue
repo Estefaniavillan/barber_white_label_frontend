@@ -1,24 +1,49 @@
 <template>
-    <footer>
-      <div class="contact-info">
-        <div class="contact-email">
-          <strong>Correo:</strong> barberogeorgez@gmail.com
-        </div>
-        <div class="contact-wzp">
-          <strong>Celular:</strong> +57 3005668477
-        </div>
-      </div>
+  <footer>
+  
+    <div class="containerFooter">
+   <picture>
+    <img src="../../assets/img/logo.png" alt="logoFooter">
+   </picture>
       
-      <div class="social-media">
-        <strong>Redes Sociales:</strong>
-        <ul>
-          <li><a href="#" target="_blank">WhatsApp</a></li>
-          <li><a href="#" target="_blank">Instagram</a></li>
-          <li><a href="#" target="_blank">Facebook</a></li>
-          <li><a href="#" target="_blank">TikTok</a></li>
-        </ul>
+    <div class="contact-info">
+      <div class="contact-email">
+        <h6>Contáctenos</h6>
+       barberogeorgez@gmail.com
       </div>
-    </footer>
-  </template>
-  
-  
+      <div class="contact-wzp">
+        +57 3005668477
+      </div>
+    </div>
+    
+    <div class="socialMedia">
+      <ul>
+        <li><img src="../../assets/img/footer/tiktok.png" alt="Tiktok"><a href="#" target="_blank"></a></li>
+        <li><img src="../../assets/img/footer/youtube.png" alt="Youtube" ><a href="#" target="_blank"></a></li>
+        <li><img src="../../assets/img/footer/instagram.png" alt="Instagram"><a href="#" target="_blank"></a></li>
+        <li><img src="../../assets/img/footer/facebook.png" alt="Facebook" ><a href="#" target="_blank"></a></li>
+        
+      </ul>
+    </div>
+  </div>
+  </footer>
+</template>
+
+<style scoped>
+
+.containerFooter{
+background-color: #B48100;
+width: 100%;
+height: 233px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+.socialMedia ul li {
+ display: inline;
+
+
+}
+
+</style>
