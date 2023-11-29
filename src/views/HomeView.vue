@@ -6,9 +6,7 @@ import CustomFooter from '../components/common/CustomFooter.vue';
 </script>
 
 <template>
-    <div>
-        <h1>PAGINA PRINCIPAL</h1>
-    </div>
+    
     <NavBar/>
     <CustomFooter/>
 </template>

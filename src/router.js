@@ -5,6 +5,8 @@ import LoginAdmin from './views/LoginAdmin.vue';
 import ProductsAdmin from './views/ProductsAdmin.vue';
 
 
+
+
 const routes = [
   { path: "/", component: HomeView },
   { path: "/LoginAdmin", component: LoginAdmin },

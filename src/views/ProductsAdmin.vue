@@ -1,23 +1,71 @@
 <script setup>
 import { ref } from 'vue';
 import { getProducts } from '../controller/ProductController';
+import NavBar from '../components/common/NavBar.vue';
+import Products from '../components/common/product/Products.vue';
+import Tops from '../components/common/product/Tops.vue'
 
 const products = ref([
     {
         id: 1,
-        name: "gel",
+        title: "gel",
+        image: "https://images.ctfassets.net/jdgtuh2uadx0/mQeFlcYhNAD5DfXNJ56lTY/40cbe23642e256d88dfa68339bea91c9/image-pdp-07500435125161_c1n1_la2018feb22125459-i5ckP-image?fm=webp&w=548",
+        brand: "Liminia",
         price: "1200000"
     },
     {
-
         id: 2,
-        name: "shampoo",
-        price: "100000",
-
+        title: "Shampoo",
+        image: "https://images.ctfassets.net/jdgtuh2uadx0/mQeFlcYhNAD5DfXNJ56lTY/40cbe23642e256d88dfa68339bea91c9/image-pdp-07500435125161_c1n1_la2018feb22125459-i5ckP-image?fm=webp&w=548",
+        brand: "Savital",
+        price: "1000000"
+    },
+    {
+        id: 3,
+        title: "Shampoo",
+        image: "https://images.ctfassets.net/jdgtuh2uadx0/mQeFlcYhNAD5DfXNJ56lTY/40cbe23642e256d88dfa68339bea91c9/image-pdp-07500435125161_c1n1_la2018feb22125459-i5ckP-image?fm=webp&w=548",
+        brand: "Savital",
+        price: "1000000"
+    },
+    {
+        id: 4,
+        title: "Shampoo",
+        image: "https://images.ctfassets.net/jdgtuh2uadx0/mQeFlcYhNAD5DfXNJ56lTY/40cbe23642e256d88dfa68339bea91c9/image-pdp-07500435125161_c1n1_la2018feb22125459-i5ckP-image?fm=webp&w=548",
+        brand: "Savital",
+        price: "1000000"
     }
 ])
 
-
+const tops = ref([
+    {
+        
+        title: "gel",
+        image: "https://images.ctfassets.net/jdgtuh2uadx0/mQeFlcYhNAD5DfXNJ56lTY/40cbe23642e256d88dfa68339bea91c9/image-pdp-07500435125161_c1n1_la2018feb22125459-i5ckP-image?fm=webp&w=548",
+        brand: "Liminia",
+        
+    },
+    {
+        
+        title: "Shampoo",
+        image: "https://images.ctfassets.net/jdgtuh2uadx0/mQeFlcYhNAD5DfXNJ56lTY/40cbe23642e256d88dfa68339bea91c9/image-pdp-07500435125161_c1n1_la2018feb22125459-i5ckP-image?fm=webp&w=548",
+        brand: "Savital",
+       
+    },
+    {
+        
+        title: "Shampoo",
+        image: "https://images.ctfassets.net/jdgtuh2uadx0/mQeFlcYhNAD5DfXNJ56lTY/40cbe23642e256d88dfa68339bea91c9/image-pdp-07500435125161_c1n1_la2018feb22125459-i5ckP-image?fm=webp&w=548",
+        brand: "Savital",
+        
+    },
+    {
+        
+        title: "Shampoo",
+        image: "https://images.ctfassets.net/jdgtuh2uadx0/mQeFlcYhNAD5DfXNJ56lTY/40cbe23642e256d88dfa68339bea91c9/image-pdp-07500435125161_c1n1_la2018feb22125459-i5ckP-image?fm=webp&w=548",
+        brand: "Savital",
+        
+    }
+])
 
 function mostrarFormularioAgregar() {
     // Lógica para mostrar el formulario de agregar
@@ -52,11 +100,15 @@ async function showProducts() {
 
 </script>
 <template>
-    <h1>PRODUCTOS</h1>
-
-    <ul id="listaProductos">
-    </ul>
-    <li v-for="product in products" :key="product.id">{{ product.name }}</li>
+    <NavBar/>   
+    
+    <div class="a">
+        <h1>Productos</h1>
+    </div>
+    
+    <Products :products="products" />
+    <Tops :tops="tops"/>
+   
     <div id="formulario" style="display: none;">
         <h2 id="formularioTitulo">Agregar Producto</h2>
         <label for="nombre">Nombre:</label>
@@ -70,4 +122,14 @@ async function showProducts() {
     </div>
     <button onclick="mostrarFormularioAgregar()">Agregar Producto</button>
 </template>
+<style scoped>
+.a {
+    color: var(--gray-100, #040404);
+    font-family: Nunito;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+</style>
 

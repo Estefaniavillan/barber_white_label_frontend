@@ -1,10 +1,12 @@
 <template>
     <div>
         <nav>
-            <router-link to="/" exact-active-class="active">PAGINA PRINCIPAL</router-link>            
-            <router-link to="/LoginAdmin" exact-active-class="active">LOGIN ADMIN</router-link>            
-            <router-link to="/ProductsAdmin" exact-active-class="active">ADMINISTRADOR DE PRODUCTOS</router-link>
-            <router-link to="/whobook" exact-active-class="active">¿ Quienes Somos ?</router-link>
+            <img src="../../assets/img/Layer_1.svg" alt="Logo" class="logo" />
+            <router-link to="/" exact-active-class="active">Home</router-link>            
+            <router-link to="/ServicesAdmin" exact-active-class="active">Servicios</router-link>            
+            <router-link to="/ProductsAdmin" exact-active-class="active">Productos</router-link>
+            <router-link to="/" exact-active-class="active">Blog</router-link>
+        
         </nav>
     </div>
 </template>
@@ -36,3 +38,5 @@ nav a:hover {
     font-weight: bold;
 }
 </style>
+
+
