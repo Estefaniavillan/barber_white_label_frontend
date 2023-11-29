@@ -10,7 +10,7 @@ import CreationServices from './views/CreationServicesView.vue';
 import BlogView from './views/BlogView.vue'
 
 const routes = [
-  { path: '/', component: Bookings },
+  { path: '/', component: ServicesAdmi },
   { path: '/subcategories', component: Subcategories },
   { path: '/bookings', component: Bookings },
   {
