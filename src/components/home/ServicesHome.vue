@@ -1,5 +1,5 @@
 <script setup>
-import Container from "../components/common/ComponentServicesAdmi/ContainerField.vue";
+import Container from "../common/ComponentServicesAdmi/ContainerField.vue";
 const firstList = ["Corte de cabello", " Ritual de barba", "Corte y barba"];
 const secondList = [
   "Exfoliaciòn facial",
@@ -54,17 +54,17 @@ const thirdList = [
       <picture>
         <img
           class="scissors"
-          src="../assets/img/servicesAdmi/noun-barber-56898974.png"
+          src="../../assets/img/servicesAdmi/noun-barber-56898974.png"
           alt="Imagen tijera"
         />
         <img
           class="other"
-          src="../assets/img/servicesAdmi/noun-barber-56898973.png"
+          src="../../assets/img/servicesAdmi/noun-barber-56898973.png"
           alt="Imagen mascarilla"
         />
         <img
           class="faceMask"
-          src="../assets/img/servicesAdmi/noun-barber-56898972.png"
+          src="../../assets/img/servicesAdmi/noun-barber-56898972.png"
           alt="otros"
         />
       </picture>
@@ -81,7 +81,7 @@ const thirdList = [
 }
 
 .imagen {
-  background-image: url("../assets/img/servicesAdmi/barba.png");
+  background-image: url("../../assets/img/servicesAdmi/barba.png");
   position: relative;
   top: 0;
   left: 0;

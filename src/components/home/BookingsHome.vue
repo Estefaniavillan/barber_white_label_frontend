@@ -1,11 +1,11 @@
 <script setup>
-import TextField from "../components/common/ComponentBookings/TextField.vue";
-import ChoiceField from "../components/common/ComponentBookings/ChoiceField.vue";
-import CalendarField from "../components/common/ComponentBookings/CalendarContainer.vue";
-import NumberPhoneField from "../components/common/ComponentBookings/containerPhoneNumber.vue";
-import CustomButton from "../components/common/ComponentBookings/CustomButton.vue";
-import Whatsapp from "../components/common/Whatsapp.vue";
-import CustomFooter from "../components/common/CustomFooter.vue";
+import TextField from "../common/ComponentBookings/TextField.vue";
+import ChoiceField from "../common/ComponentBookings/ChoiceField.vue";
+import CalendarField from "../common/ComponentBookings/CalendarContainer.vue";
+import NumberPhoneField from "../common/ComponentBookings/containerPhoneNumber.vue";
+import CustomButton from "../common/ComponentBookings/CustomButton.vue";
+import Whatsapp from "../common/Whatsapp.vue";
+import CustomFooter from "../common/CustomFooter.vue";
 import { defineProps } from "vue";
 
 const props = defineProps({
@@ -20,7 +20,7 @@ const props = defineProps({
     <h2 class="TextBookings">¡Reserva ahora!</h2>
     <picture>
       <img
-        src="../assets/img/bookings/Rectangle 45.png"
+        src="../../assets/img/bookings/Rectangle%2045.png"
         class="rectangle"
         alt="background image"
       />
@@ -68,7 +68,7 @@ const props = defineProps({
       <picture>
         <img
           class="imgBookings"
-          src="../assets/img/bookings/Bookings.png"
+          src="../../assets/img/bookings/Bookings.png"
           alt="imgBookings"
         />
       </picture>
