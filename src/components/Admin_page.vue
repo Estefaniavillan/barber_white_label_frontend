@@ -1,5 +1,5 @@
 <script scope>
-  import ProductosAdmi from './Productos_admi.vue';
+  import ProductosAdmi from '../views/ProductsAdminView.vue';
   import ServiciosAdmi from './Servicios_admi.vue';
   import Creacion_Servicios from './Creacion_Servicios.vue';
   
