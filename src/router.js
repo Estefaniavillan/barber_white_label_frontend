@@ -1,31 +1,32 @@
-import { createRouter, createWebHistory } from 'vue-router'
-
-import LoginAdmin from './views/LoginAdminView.vue';
+import {createRouter, createWebHistory} from 'vue-router'
 import Subcategories from './views/SubcategoriesView.vue';
-import Bookings from './views/BookingsView.vue';
+import Bookings from './components/home/BookingsHome.vue';
 import AdminPage from './views/AdminPageView.vue';
-import ServicesAdmi from './views/ServicesAdminView.vue';
 import ProductsAdmi from './views/ProductsAdminView.vue';
 import CreationServices from './views/CreationServicesView.vue';
-import BlogView from './views/BlogView.vue'
+import HomePageView from "./views/HomePageView.vue";
+import ServicesAdminView from "./components/home/ServicesHome.vue";
+import LoginAdminView from "./views/LoginAdminView.vue";
 
 const routes = [
-  { path: '/', component: Bookings },
-  { path: '/subcategories', component: Subcategories },
-  { path: '/bookings', component: Bookings },
-  {
-    path: '/admin',
-    component: AdminPage,
-    children: [
-      { path: 'products', component: ProductsAdmi },
-      { path: 'services', component: ServicesAdmi },
-      { path: 'creation', component: CreationServices },
-    ],
-  },
+    {path: '/', component: HomePageView},
+    {path: '/login', component: LoginAdminView},
+    {path: '/subcategories', component: Subcategories},
+    {path: '/bookings', component: Bookings},
+    {path: '/admin', component: ProductsAdmi},
+    {
+        path: '/admin',
+        component: AdminPage,
+        children: [
+            {path: 'products', component: ProductsAdmi},
+            {path: 'services', component: ServicesAdminView},
+            {path: 'creation', component: CreationServices},
+        ],
+    },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+    history: createWebHistory(),
+    routes,
 })
 export default router;

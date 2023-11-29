@@ -1,6 +1,6 @@
 <script scope>
 import ProductsAdmi from "./ProductsAdminView.vue";
-import ServicesAdmi from "./ServicesAdminView.vue";
+import ServicesAdmi from "../components/home/ServicesHome.vue";
 import CreactionServices from "./CreationServicesView.vue";
 </script>
 
