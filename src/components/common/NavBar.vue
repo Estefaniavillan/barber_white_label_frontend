@@ -2,10 +2,10 @@
     <nav>
         <img src="../../assets/img/logo.png" alt="Logo" class="logo"/>
         <article>
-            <router-link to="/" exact-active-class="active">Home</router-link>
-            <router-link to="/services" exact-active-class="active">Servicios</router-link>
-            <router-link to="/products" exact-active-class="active">Productos</router-link>
-            <router-link to="/blog" exact-active-class="active">Blog</router-link>
+            <router-link to="/" exact-active-class="active"><p>Home</p></router-link>
+            <router-link to="/services" exact-active-class="active"><p>Servicios</p></router-link>
+            <router-link to="/products" exact-active-class="active"><p>Productos</p></router-link>
+            <router-link to="/blog" exact-active-class="active"><p>Blog</p></router-link>
         </article>
     </nav>
 </template>
@@ -14,9 +14,10 @@
 nav {
     background: rgba(16, 16, 16, 0.5);
     display: flex;
-    min-height: 7rem;
+    min-height: 8.8rem;
     justify-content: space-between;
     align-items: center;
+    padding-left: 3rem;
 }
 
 nav article {
@@ -24,6 +25,12 @@ nav article {
     gap: 7rem;
     align-items: center;
     margin-right: 60px;
+}
+
+p {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
 }
 
 @media screen and (max-width: 768px) {
