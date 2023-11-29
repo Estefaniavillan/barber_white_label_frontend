@@ -7,12 +7,3 @@
 
 <style scoped>
 </style>
-
-
-<style>
-#app {
-
-    color: #000000;
-
-}
-</style>

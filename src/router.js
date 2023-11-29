@@ -1,17 +1,19 @@
-import {createRouter, createWebHistory} from 'vue-router';
-import Home from './views/HomePage.vue';
-import Subcategories from './views/Subcategories.vue';
-import Bookings from './views/Bookings.vue';
-import AdminPage from './views/AdminPage.vue';
-import ServicesAdminView from './views/ServicesAdminView.vue';
-import ProductsAdmi from './views/ProductsAdmi.vue';
-import CreationServices from './views/CreationServices.vue';
+import {createRouter, createWebHistory} from 'vue-router'
+import Subcategories from './views/SubcategoriesView.vue';
+import Bookings from './components/home/BookingsHome.vue';
+import AdminPage from './views/AdminPageView.vue';
+import ProductsAdmi from './views/ProductsAdminView.vue';
+import CreationServices from './views/CreationServicesView.vue';
+import HomePageView from "./views/HomePageView.vue";
+import ServicesAdminView from "./components/home/ServicesHome.vue";
+import LoginAdminView from "./views/LoginAdminView.vue";
 
 const routes = [
-    {path: '/', component: ServicesAdminView},
+    {path: '/', component: HomePageView},
+    {path: '/login', component: LoginAdminView},
     {path: '/subcategories', component: Subcategories},
     {path: '/bookings', component: Bookings},
-
+    {path: '/admin', component: ProductsAdmi},
     {
         path: '/admin',
         component: AdminPage,
@@ -19,7 +21,6 @@ const routes = [
             {path: 'products', component: ProductsAdmi},
             {path: 'services', component: ServicesAdminView},
             {path: 'creation', component: CreationServices},
-            {path: '/home', component: Home},
         ],
     },
 ];
@@ -27,6 +28,5 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
-});
-
+})
 export default router;
