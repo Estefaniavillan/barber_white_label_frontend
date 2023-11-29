@@ -2,46 +2,41 @@
 import NavBar from "../components/common/NavBar.vue";
 import Whatsapp from "../components/common/Whatsapp.vue";
 import CustomButton from "../components/common/ComponentBookings/CustomButton.vue";
+import ServicesHome from "../components/home/ServicesHome.vue";
+import BookingsHome from "../components/home/BookingsHome.vue";
 </script>
 <template>
     <div class="container">
         <div class="container-background"/>
         <div class="containerBox"/>
     </div>
-    <NavBar/>
-    <article class="welcome">
-        <h2>
-            Tradición y Tendencia <br/>
-            se unen en <span class="colored-text">cada estilo</span>, <br/>
-            creando tu look único
-        </h2>
-        <div class="first-line"></div>
-        <p>
-            Nuestros expertos barberos moldean tu imagen con pasión. <br/>
-            ¡Reserva hoy y descubre el poder de un estilo excepcional en Barbería
-            Cortés!
-        </p>
-        <CustomButton text="¡Reserva ahora!"></CustomButton>
-    </article>
-    <article class="service">
-
-    </article>
-    <article class="bookings">
-
-    </article>
-  <!--    <div class="container">-->
-  <!--        <div class="containerHome">-->
-  <!--            <div class="textContainer">-->
-  <!--                <ServicesAdminView/>-->
-  <!--                <BookingsView/>-->
-  <!--            </div>-->
-  <!--        </div>-->
-  <!--    </div>-->
-
+    <main>
+        <NavBar/>
+        <article class="welcome">
+            <h2>
+                Tradición y Tendencia <br/>
+                se unen en <span class="colored-text">cada estilo</span>, <br/>
+                creando tu look único
+            </h2>
+            <div class="first-line"></div>
+            <p>
+                Nuestros expertos barberos moldean tu imagen con pasión. <br/>
+                ¡Reserva hoy y descubre el poder de un estilo excepcional en Barbería
+                Cortés!
+            </p>
+            <CustomButton text="¡Reserva ahora!"></CustomButton>
+        </article>
+        <article class="service">
+            <ServicesHome/>
+        </article>
+        <article class="bookings">
+            <BookingsHome/>
+        </article>
+    </main>
     <Whatsapp></Whatsapp>
 </template>
 
-<style>
+<style scoped>
 .container {
     width: 100%;
     height: 100%;
@@ -56,8 +51,13 @@ import CustomButton from "../components/common/ComponentBookings/CustomButton.vu
 .container-background {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(90deg, #101010 0%, #101010 25.52%, rgba(16, 16, 16, 0.00) 100%);
+    background-image: linear-gradient(90deg, #101010 0%, #101010 40%, rgba(16, 16, 16, 0.00) 100%);
     position: absolute;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
 .welcome {

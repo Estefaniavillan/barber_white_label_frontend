@@ -25,7 +25,7 @@ const props = defineProps({
         alt="background image"
       />
     </picture>
-    <div class="content-wrapper">
+    <div class="container-card">
       <form class="bookings">
         <TextField title="Nombre:" placeholder="Ingresa tu nombre completo" />
         <TextField
@@ -109,7 +109,7 @@ const props = defineProps({
   margin: 46px 9px;
 }
 
-.content-wrapper {
+.container-card {
   display: flex;
   flex-direction: row-reverse;
 }
