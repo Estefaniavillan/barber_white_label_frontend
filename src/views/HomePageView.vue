@@ -1,7 +1,7 @@
 <script setup>
 import NavBar from "../components/common/NavBar.vue";
 import Whatsapp from "../components/common/Whatsapp.vue";
-import BookNow from "../components/common/ComponentBookings/CustomButton.vue";
+import CustomButton from "../components/common/ComponentBookings/CustomButton.vue";
 </script>
 <template>
     <div class="container">
@@ -21,8 +21,7 @@ import BookNow from "../components/common/ComponentBookings/CustomButton.vue";
             ¡Reserva hoy y descubre el poder de un estilo excepcional en Barbería
             Cortés!
         </p>
-
-        <BookNow class="bookNow" placeholder="¡Reserva ahora!"></BookNow>
+        <CustomButton text="¡Reserva ahora!"></CustomButton>
     </article>
     <article class="service">
 
@@ -54,7 +53,7 @@ import BookNow from "../components/common/ComponentBookings/CustomButton.vue";
     z-index: -1;
 }
 
-.container-background{
+.container-background {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(90deg, #101010 0%, #101010 25.52%, rgba(16, 16, 16, 0.00) 100%);
@@ -97,20 +96,6 @@ import BookNow from "../components/common/ComponentBookings/CustomButton.vue";
     font-family: 'Maven Pro', sans-serif;
 }
 
-/*.containerHome {*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background: linear-gradient(*/
-/*            90deg,*/
-/*            #101010 0%,*/
-/*            #101010 25.52%,*/
-/*            rgba(16, 16, 16, 0) 100%*/
-/*    );*/
-/*}*/
-
 .containerBox {
     width: 380px;
     height: 673px;
@@ -119,44 +104,4 @@ import BookNow from "../components/common/ComponentBookings/CustomButton.vue";
     background: #8a939b;
     margin: 12rem 1025px 179px 46px;
 }
-
-/*.img {*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background-repeat: no-repeat;*/
-/*    z-index: -1;*/
-/*}*/
-
-/*.textContainer {*/
-/*    flex-direction: column;*/
-/*    margin: 329px -207px;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    position: absolute;*/
-/*}*/
-
-/*p {*/
-/*    color: white;*/
-/*}*/
-
-/*.vector {*/
-/*    height: 3px;*/
-/*    margin: -45px 590px 0px 0px;*/
-/*}*/
-
-/*.textContainer h2 {*/
-/*    font-size: 50px;*/
-/*    font-style: normal;*/
-/*    font-weight: 400;*/
-/*    line-height: 105%;*/
-/*    color: white;*/
-/*}*/
-
-/*.bookNow {*/
-/*    display: flex;*/
-/*    padding: 12px 48px;*/
-/*    gap: 10px;*/
-/*    margin-right: 15rem;*/
-/*}*/
 </style>
