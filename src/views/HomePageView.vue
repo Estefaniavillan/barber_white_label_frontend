@@ -1,108 +1,56 @@
-<script>
-import NadvarHome from "../components/common/ComponentNavbar/Navbar.vue";
+<script setup>
+import NavBar from "../components/common/NavBar.vue";
 import Whatsapp from "../components/common/Whatsapp.vue";
-import BookNow from "../components/common/ComponentBookings/CustomButton.vue";
-export default {
-  components: {
-    Whatsapp,
-    NadvarHome,
-    BookNow,
-  },
-};
+import ServicesHome from "../components/home/ServicesHome.vue";
+import BookingsHome from "../components/home/BookingsHome.vue";
+import WelcomeHome from "../components/home/WelcomeHome.vue";
+
+import {getHome} from "../controllers/HomeController.js";
+import {onMounted, ref} from "vue";
+
+const services = ref([]);
+onMounted(async () => {
+    const home = await getHome();
+    services.value = home.services;
+    console.log(home.services);
+});
 </script>
 <template>
-  <NadvarHome></NadvarHome>
-  <div class="container">
-    <div class="containerHome">
-      <div class="textContainer">
-        <h2>
-          Tradición y Tendencia <br />
-          se unen en <span class="colored-text"><u>cada estilo,</u> </span
-          ><br />
-          creando tu look único
-        </h2>
-        <img class="vector" src="../assets/img/Vector.png" alt="vector" />
-        <p>
-          Nuestros expertos barberos moldean tu imagen con pasión. <br />
-          ¡Reserva hoy y descubre el poder de un estilo excepcional en Barbería
-          Cortés!
-        </p>
-
-        <BookNow class="bookNow" placeholder="¡Reserva ahora!"></BookNow>
-      </div>
-    </div>
-  </div>
-  <div class="containerBox"></div>
-
-  <Whatsapp></Whatsapp>
+    <main>
+        <article class="navBar">
+            <NavBar/>
+        </article>
+        <article class="welcome">
+            <WelcomeHome/>
+        </article>
+        <article class="service">
+            <ServicesHome :services="services"/>
+        </article>
+        <article class="bookings">
+            <BookingsHome/>
+        </article>
+    </main>
+    <Whatsapp></Whatsapp>
 </template>
 
-<style>
-.container {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("../assets/img/corte.png");
-  background-size: cover;
-  z-index: -1;
-}
-.containerHome {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    #101010 0%,
-    #101010 25.52%,
-    rgba(16, 16, 16, 0) 100%
-  );
-}
-.containerBox {
-  width: 380px;
-  height: 673px;
-  border-radius: 14px;
-  opacity: 10%;
-  background: #8a939b;
-  margin: 54px 1025px 179px 46px;
+<style scoped>
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
-.img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  z-index: -1;
+.navBar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
-.textContainer {
-  flex-direction: column;
-  margin: 329px -207px;
-  display: flex;
-  align-items: center;
-  position: absolute;
-}
-.colored-text {
-  color: #b48100;
-}
-.vector {
-  height: 3px;
-  margin: -45px 590px 0px 0px;
-}
-.textContainer h2 {
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 105%;
-}
-
-.bookNow {
-  display: flex;
-  padding: 12px 48px;
-  gap: 10px;
-  margin-right: 15rem;
+.welcome {
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
 </style>

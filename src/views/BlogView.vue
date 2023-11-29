@@ -1,5 +1,5 @@
 <script setup>
-import Navbar from "../components/common/ComponentNavbar/Navbar.vue";
+import Navbar from "../components/common/NavBar.vue";
 import CustomFooter from "../components/common/CustomFooter.vue";
 import Whatsapp from "../components/common/Whatsapp.vue";
 </script>

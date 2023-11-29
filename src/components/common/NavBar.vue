@@ -1,38 +1,71 @@
 <template>
-    <div>
-        <nav>
-            <router-link to="/" exact-active-class="active">PAGINA PRINCIPAL</router-link>            
-            <router-link to="/LoginAdmin" exact-active-class="active">LOGIN ADMIN</router-link>            
-            <router-link to="/ProductsAdmin" exact-active-class="active">ADMINISTRADOR DE PRODUCTOS</router-link>
-            <router-link to="/whobook" exact-active-class="active">¿ Quienes Somos ?</router-link>
-        </nav>
-    </div>
+    <nav>
+        <img src="../../assets/img/logo.png" alt="Logo" class="logo"/>
+        <article>
+            <router-link to="/" exact-active-class="active"><p>Home</p></router-link>
+            <router-link to="/services" exact-active-class="active"><p>Servicios</p></router-link>
+            <router-link to="/products" exact-active-class="active"><p>Productos</p></router-link>
+            <router-link to="/blog" exact-active-class="active"><p>Blog</p></router-link>
+            <router-link to="/login" exact-active-class="active"><p>Login</p></router-link>
+        </article>
+    </nav>
 </template>
 
 <style scoped>
 nav {
-    overflow: hidden;
+    background: rgba(16, 16, 16, 0.5);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-left: 2rem;
-    padding-right: 1rem;
-    padding-bottom: 2rem;
+    min-height: 8.8rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
 }
 
-nav a {
-    color: #5B656F;
-    text-align: center;
-    padding: 1rem 2rem;
+nav article {
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+    margin-right: 60px;
+}
+
+p {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+}
+
+.logo {
+    width: 129px;
+    height: 72px;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+
+a {
     text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+
 }
 
-nav a:hover {
-    color: #5c37d7;
-}
 
-.active {
-    color: #3737d7;
-    font-weight: bold;
-}
 </style>
+<script setup>
+</script>
