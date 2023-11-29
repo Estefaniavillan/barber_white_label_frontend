@@ -18,8 +18,15 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 729px;
+  
 }
-
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column; 
+    gap: 10px; 
+    height: auto; 
+  }
+}
 .logo {
   width: 129px;
   height: 72px;
@@ -40,6 +47,7 @@ a {
   text-align: center;
   font-size: 16px;
   font-weight: 900;
+  
 }
 
 

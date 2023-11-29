@@ -1,15 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import LoginAdmi from './views/LoginAdmi.vue';
-import Subcategories from './views/Subcategories.vue';
-import Bookings from './views/Bookings.vue';
-import AdminPage from './views/AdminPage.vue';
-import ServicesAdmi from './views/ServicesAdmi.vue';
-import ProductsAdmi from './views/ProductsAdmi.vue';
-import CreationServices from './views/CreationServices.vue';
+import LoginAdmin from './views/LoginAdminView.vue';
+import Subcategories from './views/SubcategoriesView.vue';
+import Bookings from './views/BookingsView.vue';
+import AdminPage from './views/AdminPageView.vue';
+import ServicesAdmi from './views/ServicesAdminView.vue';
+import ProductsAdmi from './views/ProductsAdminView.vue';
+import CreationServices from './views/CreationServicesView.vue';
+import BlogView from './views/BlogView.vue'
 
 const routes = [
-  { path: '/', component: LoginAdmi },
+  { path: '/', component: Bookings },
   { path: '/subcategories', component: Subcategories },
   { path: '/bookings', component: Bookings },
   {

@@ -1,13 +1,22 @@
-<script>
+<script setup>
+import login from "../controllers/LoginController.js";
 import TextField from "../components/common/ComponentBookings/TextField.vue";
-import BookNow from "../components/common/ComponentBookings/BookNow.vue";
+import CustomButton from "../components/common/ComponentBookings/CustomButton.vue";
 
-export default {
-  components: {
-    TextField,
-    BookNow,
-  },
-};
+import { ref } from "vue";
+import router from "../router.js";
+
+const email = ref("");
+const password = ref("");
+
+async function handleLogin() {
+  const isLogin = await login(email.value, password.value);
+  if (isLogin) {
+    await router.push("/admin");
+  } else {
+    alert("Este correo o la contraseña son incorrectas!");
+  }
+}
 </script>
 
 <template>
@@ -16,23 +25,17 @@ export default {
   </div>
 
   <div class="container">
-    <form class="loginForm">
+    <form class="loginForm" @submit.prevent="handleLogin">
       <div class="date">
         <h2>¡Bienvenido!</h2>
-        <p>Para ingresar, completa los campos</p>
+        <p>Para ingresar, completa los campos.</p>
         <div>
           <TextField
             class="email"
             title="Correo electronico:"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            v-model="email"
           />
-          <TextField
-            class="password"
-            title="Contraseña:"
-            required
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[*%$#-_()./=@&!?+]).{8,}"
-          />
+          <TextField class="password" title="Contraseña:" v-model="password" />
           <ul class="list">
             <li>Minimo 8 caracteres</li>
             <li>Minimo una mayùscula</li>
@@ -42,7 +45,7 @@ export default {
             </li>
             <li>Minimo un nùmero (0-9)</li>
           </ul>
-          <BookNow class="getInto" placeholder="Ingresar"></BookNow>
+          <CustomButton class="getInto" text="Ingresar" />
         </div>
       </div>
     </form>
@@ -56,6 +59,8 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
+  gap: 729px;
+
 }
 .imgLogin img {
   position: absolute;
@@ -81,10 +86,12 @@ export default {
 h2 {
   font-size: 30px;
   font-weight: 700;
+  color: #ffffff;
 }
 p {
   font-size: 16px;
   font-weight: 600;
+  color: #ffffff;
 }
 .email,
 .password {

@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import { getProducts } from '../controller/ProductController';
+import { getProducts } from '../controllers/ProductController';
 
 const products = ref([
     {
