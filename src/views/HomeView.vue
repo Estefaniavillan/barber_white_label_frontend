@@ -1,5 +1,5 @@
 <script setup>
-
+import { onMounted, ref } from 'vue';
 import NavBar from '../components/common/NavBar.vue';
 import CustomFooter from '../components/common/CustomFooter.vue';
 

@@ -1,5 +1,5 @@
 <script scope>
-import { getServices } from '../controllers/ServiceController';
+import { getServices } from '../controller/ServiceController';
 function mostrarFormularioAgregar() {
     // Lógica para mostrar el formulario de agregar
     // Puedes inicializar los campos del formulario si es necesario

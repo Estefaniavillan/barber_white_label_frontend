@@ -1,28 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import LoginAdmin from './views/LoginAdminView.vue';
-import Subcategories from './views/SubcategoriesView.vue';
-import Bookings from './views/BookingsView.vue';
-import AdminPage from './views/AdminPageView.vue';
-import ServicesAdmi from './views/ServicesAdminView.vue';
-import ProductsAdmi from './views/ProductsAdminView.vue';
-import CreationServices from './views/CreationServicesView.vue';
-import BlogView from './views/BlogView.vue'
+import HomeView from './views/HomeView.vue';
+import LoginAdmin from './views/LoginAdmin.vue';
+import ProductsAdmin from './views/ProductsAdmin.vue';
+
 
 const routes = [
-  { path: '/', component: Bookings },
-  { path: '/subcategories', component: Subcategories },
-  { path: '/bookings', component: Bookings },
-  {
-    path: '/admin',
-    component: AdminPage,
-    children: [
-      { path: 'products', component: ProductsAdmi },
-      { path: 'services', component: ServicesAdmi },
-      { path: 'creation', component: CreationServices },
-    ],
-  },
-];
+  { path: "/", component: HomeView },
+  { path: "/LoginAdmin", component: LoginAdmin },
+  {path: "/ProductsAdmin", component: ProductsAdmin}
+]
 
 const router = createRouter({
   history: createWebHistory(),
