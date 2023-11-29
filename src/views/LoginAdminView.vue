@@ -12,7 +12,7 @@ const password = ref("");
 async function handleLogin() {
     const isLogin = await login(email.value, password.value);
     if (isLogin) {
-        await router.push("/admin");
+        await router.push("/admin/services");
     } else {
         alert("Este correo o la contraseña son incorrectas!");
     }

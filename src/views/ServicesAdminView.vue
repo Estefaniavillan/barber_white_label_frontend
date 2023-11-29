@@ -31,7 +31,6 @@ onMounted(async () => {
             <HeaderAdmin/>
             <ElementTable :headers="headers" :items="services"/>
         </article>
-
     </section>
 </template>
 
