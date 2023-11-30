@@ -10,10 +10,7 @@ const services = ref([]);
 const headers = [
     {text: "Nombre", value: "name"},
     {text: "Categoría", value: "category"},
-    {text: "Marca", value: "brand"},
     {text: "Precio", value: "price"},
-    {text: "Stock", value: "stock"},
-    {text: "Estado", value: "state"},
     {text: "Editar", value: "edit"},
     {text: "Eliminar", value: "delete"},
 ];
@@ -38,6 +35,7 @@ onMounted(async () => {
 
 .container {
     display: flex;
+    background-color: #101010;
 }
 
 .body-container {

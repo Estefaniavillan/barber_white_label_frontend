@@ -1,34 +1,39 @@
 <script setup>
 import NavBarAdmin from "../components/admin/header/NavBarAdmin.vue";
 import HeaderAdmin from "../components/admin/header/HeaderAdmin.vue";
-import ProductsTable from "../components/admin/header/ProductsTable.vue";
-import getProducts from "../controllers/ProductController.js"
-import { onMounted, ref } from "vue";
+import getProducts from "../controllers/product/GetProductController.js"
+import deleteProduct from "../controllers/product/DeleteProductController.js"
+import {onMounted, ref} from "vue";
 import ElementTable from "../components/admin/ElementTable.vue";
 
 const products = ref([]);
 const headers = [
-    { text: "Nombre", value: "name" },
-    { text: "Categoría", value: "category" },
-    { text: "Marca", value: "brand" },
-    { text: "Precio", value: "price" },
-    { text: "Stock", value: "quantity" },
-    { text: "Estado", value: "status" },
-    { text: "Editar", value: "edit" },
-    { text: "Eliminar", value: "delete" },
+    {text: "ID", value: "reference"},
+    {text: "Nombre", value: "name"},
+    {text: "Categoría", value: "category"},
+    {text: "Marca", value: "brand"},
+    {text: "Precio", value: "price"},
+    {text: "Stock", value: "quantity"},
+    {text: "Estado", value: "status"},
+    {text: "Editar", value: "edit"},
+    {text: "Eliminar", value: "delete"},
 ];
 onMounted(async () => {
     products.value = await getProducts()
 })
 
+async function handleDelete(reference) {
+    await deleteProduct(reference)
+    products.value = await getProducts()
+}
 </script>
 
 <template>
     <div class="contenedor_productos">
-        <NavBarAdmin class="nav" />
+        <NavBarAdmin class="nav"/>
         <div class="container-body">
-            <HeaderAdmin class="header" />
-            <ElementTable :headers="headers" :items="products" />
+            <HeaderAdmin class="header"/>
+            <ElementTable :headers="headers" :items="products" @on-delete="handleDelete"/>
         </div>
 
     </div>

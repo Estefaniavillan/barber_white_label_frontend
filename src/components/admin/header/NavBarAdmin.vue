@@ -4,10 +4,10 @@
             <img class="logo" src="../../../assets/img/logonav.png" alt="Logo">
         </picture>
         <section class="button-container">
-            <router-link to="home">
+            <router-link to="products">
                 <button class="button_product"><strong>Productos</strong></button>
             </router-link>
-            <router-link to="service">
+            <router-link to="services">
                 <button class="button_service"><strong>Servicios</strong></button>
             </router-link>
         </section>

@@ -4,6 +4,7 @@ import SearchField from "./SearchField.vue";
 import {ref} from "vue";
 
 defineProps(["headers", "items"])
+defineEmits(["edit", "onDelete"])
 const searchText = ref("");
 
 function buildState(state) {
@@ -29,6 +30,12 @@ function buildState(state) {
                         <div class="state" :class="{ 'active-state': item.status, 'inactive-state': !item.status }">
                             {{ buildState(item.status) }}
                         </div>
+                    </div>
+                </template>
+                <template #item-delete="item">
+                    <div class="container-delete">
+                        <img src="../../assets/img/Admin_product/delete.svg" alt="delete"
+                             @click="$emit('onDelete', item.reference)">
                     </div>
                 </template>
             </CustomTable>
@@ -96,5 +103,22 @@ article h2 {
 
 .inactive-state {
     background-color: #942828;
+}
+
+.container-delete {
+    display: flex;
+    justify-content: center;
+}
+
+.container-delete img {
+    width: 1rem;
+    height: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: #942828;
+}
+
+.container-delete img:hover {
+    background-color: #5d1313;
 }
 </style>
