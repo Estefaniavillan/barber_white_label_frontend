@@ -2,18 +2,20 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Subcategories from './views/SubcategoriesView.vue';
 import Bookings from './components/home/BookingsHome.vue';
 import AdminPage from './views/AdminPageView.vue';
-import ProductsAdmi from './views/ProductsAdminView.vue';
+import ProductsAdmi from './views/ProductsAux.vue';
 import CreationServices from './views/CreationServicesView.vue';
 import HomePageView from "./views/HomePageView.vue";
-import ServicesAdminView from "./components/home/ServicesHome.vue";
+import ServicesAdminView from "./views/ServicesAdminView.vue";
 import LoginAdminView from "./views/LoginAdminView.vue";
+import ProductsAdminView from "./views/ProductsAdminView.vue";
 
 const routes = [
     {path: '/', component: HomePageView},
     {path: '/login', component: LoginAdminView},
     {path: '/subcategories', component: Subcategories},
     {path: '/bookings', component: Bookings},
-    {path: '/admin', component: ProductsAdmi},
+    {path: '/admin/services', component: ServicesAdminView},
+    {path: '/admin/products', component: ProductsAdminView},
     {
         path: '/admin',
         component: AdminPage,

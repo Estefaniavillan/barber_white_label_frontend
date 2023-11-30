@@ -1,18 +1,9 @@
-const services = [
-    {
-        id: 1,
-        name: "Hola hhhhh"
-    },
-    {
-        id: 2,
-        name: "Adios"
-    }
-]
+import Product from "../models/Product";
 
-export async function getServices() {
-    return services
+async function getServices() {
+    const request = await fetch('http://localhost:3000/api/services');
+    const response = await request.json()
+    return response.data
 }
 
-export async function getServiceByKey(key){
-    return services.filter((service) => service.name === key || service.price === key)
-}
+export default getServices

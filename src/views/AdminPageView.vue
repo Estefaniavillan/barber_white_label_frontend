@@ -1,5 +1,5 @@
 <script scope>
-import ProductsAdmi from "./ProductsAdminView.vue";
+import ProductsAdmi from "./ProductsAux.vue";
 import ServicesAdmi from "../components/home/ServicesHome.vue";
 import CreactionServices from "./CreationServicesView.vue";
 </script>
